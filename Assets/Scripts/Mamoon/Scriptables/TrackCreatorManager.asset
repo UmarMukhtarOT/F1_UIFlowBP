@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fde97797fabf4142adcd96540eef7d0, type: 3}
+  m_Name: TrackCreatorManager
+  m_EditorClassIdentifier: 
+  allAiVehicles:
+  - {fileID: 5999680743119309819, guid: 1e13b006667a14ceb91ab624ae717c0d, type: 3}
+  - {fileID: 5845297443241228519, guid: 93ba5f72918b10d4db224af90abaa394, type: 3}
+  - {fileID: 1058218329017085947, guid: e70ae9322434b4801979272db959b724, type: 3}
+  - {fileID: 9020576063513368902, guid: ed0bb203a46cb8847b1a705d9a9f0695, type: 3}
+  - {fileID: 3378303304311923712, guid: c03784f1a686547528943907ff35dce2, type: 3}
+  - {fileID: 8275273248883268758, guid: c1ec735cb2f231f4bb2e9bbb6111749a, type: 3}
+  - {fileID: 1058262663345364552, guid: e8ba53e65d87e78439a15a9e8fc20cd8, type: 3}
+  - {fileID: 7561911378812807784, guid: 5a6e51bd644c6a24396058e4a0122c1f, type: 3}
+  - {fileID: 7958977516706656016, guid: 7cea14d69f1db374d8c15bc383728c6d, type: 3}
+  allPlayerVehicles:
+  - {fileID: 8702478554275460475, guid: 649e75d5797f74a81a334313db41ed0c, type: 3}
+  - {fileID: 6708816862736715568, guid: d76fc587b0bef447e8f95f4151e1fc9b, type: 3}
+  - {fileID: 6187209444193959954, guid: 632ef96a5e7404e4bb9e66c7fe4b9bf0, type: 3}
+  - {fileID: 5660234370231473987, guid: 184f4a206e0fc45cc8cc73dd506a96b0, type: 3}
+  allPlayableTracks:
+  - {fileID: 6339007373466707040, guid: 1f0265d75a2ee3746901311ed36c033e, type: 3}
+  - {fileID: 6170944290223776814, guid: 0102eb505dd6f26488c3b76129c51d48, type: 3}
+  tutorialLevelTrack: {fileID: 6170944290223776814, guid: 74491d86398ad414ba3933f674cd5d35,
+    type: 3}

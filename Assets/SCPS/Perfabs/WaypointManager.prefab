@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2691037903615941615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2691037903615941613}
+  - component: {fileID: 2691037903615941614}
+  m_Layer: 0
+  m_Name: WaypointManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2691037903615941613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691037903615941615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 152.61449, y: -151.3061, z: 7.3375998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2691037903615941614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691037903615941615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f98a2c6b39117b42a7a2405e07c529a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cars:
+  - Player: 1
+    finsihed: 0
+    Name: Player
+    CarTransform: {fileID: 0}
+    CarHeight: 2
+    CurrentPosition: 0
+    distance: 0
+    finalConverted: 0
+    CurrentLap: 1
+    PositionText: {fileID: 0}
+    carArrow: {fileID: 0}
+  - Player: 0
+    finsihed: 0
+    Name: Red
+    CarTransform: {fileID: 0}
+    CarHeight: 2
+    CurrentPosition: 0
+    distance: 0
+    finalConverted: 0
+    CurrentLap: 1
+    PositionText: {fileID: 0}
+    carArrow: {fileID: 0}
+  - Player: 0
+    finsihed: 0
+    Name: Purple
+    CarTransform: {fileID: 0}
+    CarHeight: 2
+    CurrentPosition: 0
+    distance: 0
+    finalConverted: 0
+    CurrentLap: 1
+    PositionText: {fileID: 0}
+    carArrow: {fileID: 0}
+  - Player: 0
+    finsihed: 0
+    Name: Blue
+    CarTransform: {fileID: 0}
+    CarHeight: 2
+    CurrentPosition: 0
+    distance: 0
+    finalConverted: 0
+    CurrentLap: 1
+    PositionText: {fileID: 0}
+    carArrow: {fileID: 0}
+  _WaypointContainer: {fileID: 0}
+  PlayerPosition: {fileID: 0}
+  NumberOfPlayers: {fileID: 0}
+  EnemyPositionText: {fileID: 9138609488706538721, guid: 91302f6a92a6d2540a0e5ab59d5b3f57,
+    type: 3}
+  WorldCanvas: {fileID: 0}
+  PlayerPositionList: {fileID: 0}
+  MaxLaps: 1
+  LapTracker: {fileID: 0}
+  map:
+    CarArrow: {fileID: 6509639079144094225, guid: d31bb3f7d49e6f941aef512be10f9e50,
+      type: 3}
+    PlayerArrowColor: {r: 0.4292565, g: 0.9716981, b: 0.2520915, a: 1}
+    EnemyArrowColor: {r: 0.9811321, g: 0, b: 0, a: 1}
+  finishedPanel:
+    Finished_Panel: {fileID: 0}
+    FinishedText: {fileID: 0}
