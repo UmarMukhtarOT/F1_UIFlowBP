@@ -8,7 +8,7 @@ public class Battle_Pass_Manager : MonoBehaviour
     public Slider progressSlider;
     public Slider sliderForHandelImage;
 
-    public GameObject PopUpCardPrefab;
+    public BP_EquipButton PopUpCardPrefab;
     public List<GameObject> regularButtons;    
     public List<GameObject> premiumButtons;
     public List<GameObject> TickMarks;

@@ -77,7 +77,17 @@ public class TierButton : MonoBehaviour
     public void GeneratePopUpCards()
     {
 
-        BP_EquipButton PopUpCard = Instantiate(BpManager.PopUpCardPrefab, UI_Reference.BP_PopUp.transform);
+
+        if (hasCoins)
+        {
+            BP_EquipButton PopUpCard = Instantiate(BpManager.PopUpCardPrefab, UI_Reference.BP_PopUp.transform);
+            //PopUpCard.AmountText.text =
+        }
+
+        
+
+        
+
 
 
 
