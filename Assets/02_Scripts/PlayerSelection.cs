@@ -72,6 +72,7 @@ public class PlayerSelection : MonoBehaviour
 
 
     public CoreGenerationHandler coreGenScript;
+    public Battle_Pass_Manager BPManagerScript;
     public static PlayerSelection Instance;
     public static int current;
     public PlayerAttributes[] Players;

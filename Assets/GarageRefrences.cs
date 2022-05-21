@@ -90,6 +90,7 @@ public class GarageRefrences : MonoBehaviour
     [Header("BattlePass System")]
     public Battle_Pass_Manager BP_Manager;
     public GameObject BP_PopUp;
+    public GameObject BP_PopUp_PrefabParent;
 
    
 
@@ -107,6 +108,12 @@ public class GarageRefrences : MonoBehaviour
     public Sprite Bp_BoostCoreSpriteUnLocked;
     public Sprite Bp_AccelCoreSpriteUnLocked;
     public Sprite Bp_ShocksCoreSpriteUnLocked;
+
+    public Sprite Bp_regularCardSprite;
+    public Sprite Bp_CoinIcon;
+    public Sprite Bp_GemIcon;
+    public Button BP_PopupCollectButton;
+
 
 
 

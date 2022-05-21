@@ -76,103 +76,42 @@ public class TierButton : MonoBehaviour
 
     public void GeneratePopUpCards()
     {
-
+       
 
         if (hasCoins)
         {
-            BP_EquipButton PopUpCard = Instantiate(BpManager.PopUpCardPrefab, UI_Reference.BP_PopUp.transform);
-            //PopUpCard.AmountText.text =
+
+            Debug.Log("Granting Coins");
+            BP_EquipButton PopUpCard = Instantiate(BpManager.PopUpCardPrefab, UI_Reference.BP_PopUp_PrefabParent.transform);
+            PopUpCard.AmountText.text = tierCoins + " Coins";
+          
+            PopUpCard.cardIcone.sprite = UI_Reference.Bp_CoinIcon;
+        }
+        if (hasGems)
+         {
+            Debug.Log("Granting Gems");
+
+            BP_EquipButton PopUpCard = Instantiate(BpManager.PopUpCardPrefab, UI_Reference.BP_PopUp_PrefabParent.transform);
+            PopUpCard.AmountText.text = tierGems + " Gems";
+           
+            PopUpCard.cardIcone.sprite = UI_Reference.Bp_GemIcon;
         }
 
-        
+         if (hasCore)
+         {
 
-        
-
-
-
-
-    }
+            Debug.Log("Granting Cores");
 
 
-
-
-
-
-    public void SetCoreStatus()
-    {
-        for (int i = 0; i < bpCoreInfoClass.Count; i++)
-        {
-
-            switch (bpCoreInfoClass[i].coretype)
+            for (int i = 0; i < bpCoreInfoClass.Count; i++)
             {
-                case CoreTypeInfo.Speed:
-                    if (isUnlocked)
-                    {
-                        displayImage.sprite = UI_Reference.Bp_SpeedCoreSpriteUnLocked;
-
-                    }
-                    else
-                    {
-
-                        displayImage.sprite = UI_Reference.Bp_SpeedCoreSpriteLocked;
-
-
-                    }
-                    break;
-                case CoreTypeInfo.Boost:
-                    if (isUnlocked)
-                    {
-                        displayImage.sprite = UI_Reference.Bp_BoostCoreSpriteUnLocked;
-
-                    }
-                    else
-                    {
-
-                        displayImage.sprite = UI_Reference.Bp_BoostCoreSpriteLocked;
-
-
-                    }
-                    break;
-                case CoreTypeInfo.Accelration:
-                    if (isUnlocked)
-                    {
-                        displayImage.sprite = UI_Reference.Bp_AccelCoreSpriteUnLocked;
-
-                    }
-                    else
-                    {
-
-                        displayImage.sprite = UI_Reference.Bp_AccelCoreSpriteLocked;
-
-
-                    }
-                    break;
-                case CoreTypeInfo.Shocks:
-                    if (isUnlocked)
-                    {
-                        displayImage.sprite = UI_Reference.Bp_ShocksCoreSpriteUnLocked;
-
-                    }
-                    else
-                    {
-
-                        displayImage.sprite = UI_Reference.Bp_ShocksCoreSpriteLocked;
-
-
-                    }
-                    break;
-                default:
-                    break;
+                BP_EquipButton PopUpCard = Instantiate(BpManager.PopUpCardPrefab, UI_Reference.BP_PopUp_PrefabParent.transform);
+                PopUpCard.AmountText.text = bpCoreInfoClass[i].corePowerType+" "+ bpCoreInfoClass[i].coretype+" Core";
+             
+                PopUpCard.cardIcone.sprite = UI_Reference.CoreTypeIconSprite[(int)bpCoreInfoClass[i].coretype];
+                PopUpCard.gameObject.SetActive(true);
             }
-
-
-
-
-
-        }
-
-
-
+         }
     }
 
 
@@ -194,7 +133,11 @@ public class TierButton : MonoBehaviour
 
     public void OpenToCollect()
     {
-      UI_Reference.BP_PopUp.SetActive(true);
+        UI_Reference.BP_PopupCollectButton.onClick.AddListener(() => CollectTier());
+    
+
+     UI_Reference.BP_PopUp.SetActive(true);
+        GeneratePopUpCards();
     }
 
 
@@ -206,6 +149,19 @@ public class TierButton : MonoBehaviour
 
     public void CollectTier()
     {
+
+
+        foreach (Transform child in UI_Reference.BP_PopUp_PrefabParent.transform)
+        {
+            //Debug.Log(child.name + "dvz");
+            if (child.GetComponent<BP_EquipButton>())
+            {
+               
+                Destroy(child.gameObject);
+
+            }
+        }
+
         if (!IsPicked)
         {
             if (hasCoins)
@@ -252,5 +208,89 @@ public class TierButton : MonoBehaviour
         return CoretypE;
 
       }
+
+
+
+
+    //public void SetCoreStatus()
+    //{
+    //    for (int i = 0; i < bpCoreInfoClass.Count; i++)
+    //    {
+
+    //        switch (bpCoreInfoClass[i].coretype)
+    //        {
+    //            case CoreTypeInfo.Speed:
+    //                if (isUnlocked)
+    //                {
+    //                    displayImage.sprite = UI_Reference.Bp_SpeedCoreSpriteUnLocked;
+
+    //                }
+    //                else
+    //                {
+
+    //                    displayImage.sprite = UI_Reference.Bp_SpeedCoreSpriteLocked;
+
+
+    //                }
+    //                break;
+    //            case CoreTypeInfo.Boost:
+    //                if (isUnlocked)
+    //                {
+    //                    displayImage.sprite = UI_Reference.Bp_BoostCoreSpriteUnLocked;
+
+    //                }
+    //                else
+    //                {
+
+    //                    displayImage.sprite = UI_Reference.Bp_BoostCoreSpriteLocked;
+
+
+    //                }
+    //                break;
+    //            case CoreTypeInfo.Accelration:
+    //                if (isUnlocked)
+    //                {
+    //                    displayImage.sprite = UI_Reference.Bp_AccelCoreSpriteUnLocked;
+
+    //                }
+    //                else
+    //                {
+
+    //                    displayImage.sprite = UI_Reference.Bp_AccelCoreSpriteLocked;
+
+
+    //                }
+    //                break;
+    //            case CoreTypeInfo.Shocks:
+    //                if (isUnlocked)
+    //                {
+    //                    displayImage.sprite = UI_Reference.Bp_ShocksCoreSpriteUnLocked;
+
+    //                }
+    //                else
+    //                {
+
+    //                    displayImage.sprite = UI_Reference.Bp_ShocksCoreSpriteLocked;
+
+
+    //                }
+    //                break;
+    //            default:
+    //                break;
+    //        }
+
+
+
+
+
+    //    }
+
+
+
+    //}
+
+
+
+
 
 }

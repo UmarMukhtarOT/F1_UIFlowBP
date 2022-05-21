@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class BP_EquipButton : MonoBehaviour
 {
-    [HideInInspector]
+   // [HideInInspector]
     public Image cardImage;
     public Image cardIcone;
-    public Text CardTypeText;
     public Text AmountText;
-    public Text corePowerTypeText;
+    
     
 
 
@@ -18,9 +17,7 @@ public class BP_EquipButton : MonoBehaviour
     void Start()
     {
         cardImage = GetComponent<Image>();
-        //200 coins
-        //AMOUNT Type
-        //1 Core Epic Boost
+        
 
     }
 

@@ -33,6 +33,12 @@ public class Battle_Pass_Manager : MonoBehaviour
 
 
 
+    public void Accept()
+    { 
+    
+    
+    
+    }
 
 
 

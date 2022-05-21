@@ -726,8 +726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0007, y: 0}
-  m_SizeDelta: {x: 9049.82, y: 818.06}
+  m_AnchoredPosition: {x: -0.000059178477, y: 0}
+  m_SizeDelta: {x: 8392.356, y: 818.06}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &18410044
 MonoBehaviour:
@@ -972,7 +972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressSlider: {fileID: 1159711458}
   sliderForHandelImage: {fileID: 1159711458}
-  PopUpCardPrefab: {fileID: 0}
+  PopUpCardPrefab: {fileID: 949559270516024530, guid: 6725b10265bfb67458d9610d6a0bbaa1,
+    type: 3}
   regularButtons:
   - {fileID: 156860488}
   - {fileID: 346549955}
@@ -1856,15 +1857,17 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1747609806}
+  - {fileID: 998293503}
   m_Father: {fileID: 326109467}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 407.10938, y: 1080}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 407.10938, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &64795631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2015,7 +2018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 6109.2847, y: -168}
+  m_AnchoredPosition: {x: 6040, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73344729
@@ -2241,7 +2244,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2326,7 +2329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 8748.078, y: -168}
+  m_AnchoredPosition: {x: 8648, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81496625
@@ -2550,7 +2553,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 829463708}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3119,7 +3122,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 475261525}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3397,7 +3400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &123070595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3410,14 +3413,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 637401672}
-  - {fileID: 1135680491}
+  - {fileID: 1304637317}
   m_Father: {fileID: 1750437476}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -524.70184, y: 0}
-  m_SizeDelta: {x: -1049.4037, y: 38.57019}
+  m_AnchorMax: {x: 0.6625553, y: 1}
+  m_AnchoredPosition: {x: 1.6401367, y: 0}
+  m_SizeDelta: {x: 3.2802734, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123070596
 MonoBehaviour:
@@ -3432,14 +3435,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.509434, g: 0.49261305, b: 0.49261305, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d6f3a7e4ff207e843aa7f968e689b30e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7f537dec9ee671428a70ae13115052b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3456,82 +3459,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123070594}
-  m_CullTransparentMesh: 1
---- !u!1 &126958269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 126958270}
-  - component: {fileID: 126958273}
-  - component: {fileID: 126958272}
-  m_Layer: 5
-  m_Name: BP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &126958270
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126958269}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 381015296}
-  m_Father: {fileID: 326109467}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 203.55005, y: 175}
-  m_SizeDelta: {x: -407.1099, y: 336}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &126958272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126958269}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &126958273
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126958269}
   m_CullTransparentMesh: 1
 --- !u!1 &127619006
 GameObject:
@@ -3691,9 +3618,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2030180287}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3853,7 +3780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 11057.025, y: -168}
+  m_AnchoredPosition: {x: 10930, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &145547377
@@ -4030,7 +3957,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1821.2457, y: -168}
+  m_AnchoredPosition: {x: 1802, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &151657517
@@ -4384,7 +4311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5119.7373, y: -168}
+  m_AnchoredPosition: {x: 5062, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &185539757
@@ -4683,9 +4610,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 901260704}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4928,7 +4855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &213501935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6158,7 +6085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1491.3966, y: -168}
+  m_AnchoredPosition: {x: 1476, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &224151439
@@ -7360,7 +7287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 18.399963, y: 0.6000366}
+  m_AnchoredPosition: {x: 18.399994, y: 0.6000366}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &279761166
@@ -7735,9 +7662,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 151657517}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7869,7 +7796,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2041525266}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8078,9 +8005,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2006071600}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8248,7 +8175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 7098.832, y: -168}
+  m_AnchoredPosition: {x: 7018, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &300871636
@@ -8754,7 +8681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10067.477, y: -168}
+  m_AnchoredPosition: {x: 9952, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &321485228
@@ -8999,19 +8926,17 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 64795630}
-  - {fileID: 1747609806}
-  - {fileID: 998293503}
   - {fileID: 327942897}
-  - {fileID: 126958270}
+  - {fileID: 381015296}
+  - {fileID: 64795630}
   m_Father: {fileID: 1750437476}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2903, y: 1080.1201}
-  m_Pivot: {x: 0, y: 0.5}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326109468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9155,7 +9080,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 326109467}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -9542,9 +9467,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1269233006}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9751,7 +9676,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1961275220}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10293,7 +10218,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1264953973}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10409,7 +10334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.0014648438, y: 280.72003}
+  m_AnchoredPosition: {x: 0.0014648438, y: 262}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &371514735
@@ -10617,18 +10542,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381015295}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1089995042}
-  m_Father: {fileID: 126958270}
-  m_RootOrder: 0
+  m_Father: {fileID: 326109467}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1191, y: -417.5321}
-  m_SizeDelta: {x: 2495.9, y: 835.0642}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 162.09003, y: -81.41437}
+  m_SizeDelta: {x: -324.19995, y: 917.1614}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381015297
 MonoBehaviour:
@@ -10810,7 +10735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9407.777, y: -168}
+  m_AnchoredPosition: {x: 9300, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385938888
@@ -11711,7 +11636,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 156860490}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11998,7 +11923,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1254553161}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12734,9 +12659,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434083508}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13064,9 +12989,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1444693612}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13423,7 +13348,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 8418.229, y: -168}
+  m_AnchoredPosition: {x: 8322, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494117381
@@ -13525,7 +13450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1161.5475, y: -168}
+  m_AnchoredPosition: {x: 1150, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494927980
@@ -15005,7 +14930,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 346549957}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15551,9 +15476,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1096148831}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15683,9 +15608,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615436211}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15890,9 +15815,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 145547377}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15977,7 +15902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2480.944, y: -168}
+  m_AnchoredPosition: {x: 2454, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &620774713
@@ -16438,7 +16363,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1421713945}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16568,9 +16493,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 300871636}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16704,6 +16629,8 @@ GameObject:
   - component: {fileID: 637401672}
   - component: {fileID: 637401674}
   - component: {fileID: 637401673}
+  - component: {fileID: 637401675}
+  - component: {fileID: 637401676}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -16725,10 +16652,10 @@ RectTransform:
   m_Father: {fileID: 123070595}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.358, y: 0.36600003}
-  m_AnchorMax: {x: 0.7324792, y: 0.8262223}
-  m_AnchoredPosition: {x: -60, y: -81.69299}
-  m_SizeDelta: {x: 949.739, y: 358.22803}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 56}
+  m_SizeDelta: {x: 1630.6506, y: 771.4205}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &637401673
 MonoBehaviour:
@@ -16750,7 +16677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cf76614814ac193488a90d1c66a880e9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee37672f729d5114caba3e8360abeeee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16768,6 +16695,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637401671}
   m_CullTransparentMesh: 1
+--- !u!114 &637401675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637401671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 276, y: 336}
+  m_Spacing: {x: 50, y: 80}
+  m_Constraint: 0
+  m_ConstraintCount: 2
+--- !u!114 &637401676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637401671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 0
 --- !u!1 &637673701
 GameObject:
   m_ObjectHideFlags: 0
@@ -17380,9 +17345,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 224151439}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17512,9 +17477,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1370233375}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18007,7 +17972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 501.84915, y: -168}
+  m_AnchoredPosition: {x: 498, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696117795
@@ -18596,9 +18561,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 494117381}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22268,7 +22233,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1171994170}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22471,6 +22436,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800583658}
   m_CullTransparentMesh: 1
+--- !u!1 &802593635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 802593636}
+  - component: {fileID: 802593638}
+  - component: {fileID: 802593637}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &802593636
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802593635}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1304637317}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 167.3091, y: 65.6464}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &802593637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802593635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.40784317, g: 0.15686275, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c233151495757b342b416529d9a74ddf, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 43
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Accept
+--- !u!222 &802593638
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802593635}
+  m_CullTransparentMesh: 1
 --- !u!1 &803311915
 GameObject:
   m_ObjectHideFlags: 0
@@ -22630,7 +22674,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1165603614}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24044,7 +24088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 8088.3794, y: -168}
+  m_AnchoredPosition: {x: 7996, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890506394
@@ -24375,7 +24419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5779.4355, y: -168}
+  m_AnchoredPosition: {x: 5714, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901260704
@@ -24720,7 +24764,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11892602}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25454,7 +25498,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 855422995}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30410,7 +30454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &947595167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30475,13 +30519,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 511192272}
-        m_TargetAssemblyTypeName: CoreGenerationHandler, Assembly-CSharp
-        m_MethodName: Equip
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -30757,9 +30801,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1335719046}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31304,12 +31348,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 326109467}
-  m_RootOrder: 2
+  m_Father: {fileID: 64795630}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 57.6, y: -269.9}
+  m_AnchoredPosition: {x: 57.6, y: -269.96002}
   m_SizeDelta: {x: 276, y: 315}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &998293504
@@ -31458,7 +31502,7 @@ RectTransform:
   m_Children:
   - {fileID: 728333294}
   m_Father: {fileID: 1078549121}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31695,7 +31739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCoins: 1
-  hasGems: 1
+  hasGems: 0
   hasCore: 0
   isUnlocked: 0
   tierCoins: 125
@@ -32026,9 +32070,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 81496625}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32372,7 +32416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1078549121
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32387,7 +32431,6 @@ RectTransform:
   - {fileID: 971387112}
   - {fileID: 1031662480}
   - {fileID: 1753902638}
-  - {fileID: 1750437476}
   - {fileID: 1012919919}
   m_Father: {fileID: 2109610251}
   m_RootOrder: 10
@@ -32845,7 +32888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 150.5, y: -24.5}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
   m_SizeDelta: {x: 212, y: 88}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1092571665
@@ -33072,7 +33115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 11386.875, y: -168}
+  m_AnchoredPosition: {x: 11256, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096148831
@@ -33325,7 +33368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 6439.134, y: -168}
+  m_AnchoredPosition: {x: 6366, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1119305220
@@ -33841,103 +33884,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135258306}
   m_CullTransparentMesh: 1
---- !u!1 &1135680490
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1135680491}
-  - component: {fileID: 1135680493}
-  - component: {fileID: 1135680492}
-  - component: {fileID: 1135680494}
-  m_Layer: 5
-  m_Name: BP_EquipButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1135680491
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135680490}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1601605270}
-  - {fileID: 1891462106}
-  - {fileID: 1580176665}
-  - {fileID: 2109406991}
-  m_Father: {fileID: 123070595}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 264}
-  m_SizeDelta: {x: 276, y: 336}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1135680492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135680490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 32e0895b2f42b474fb81239a59eecea7, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1135680493
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135680490}
-  m_CullTransparentMesh: 1
---- !u!114 &1135680494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135680490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d5e0070605597444b8b3d6a0949837c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardImage: {fileID: 0}
-  cardIcone: {fileID: 1601605271}
-  CardTypeText: {fileID: 1580176666}
-  AmountText: {fileID: 0}
-  corePowerTypeText: {fileID: 2109406992}
 --- !u!1 &1136212586
 GameObject:
   m_ObjectHideFlags: 0
@@ -34545,7 +34491,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 34
   m_WholeNumbers: 1
-  m_Value: 0
+  m_Value: 8
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -35298,7 +35244,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1197726545}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35970,7 +35916,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1414869718}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36437,9 +36383,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2138651174}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36671,7 +36617,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000324219, y: 0}
+  m_AnchoredPosition: {x: 0, y: -28.98}
   m_SizeDelta: {x: 11530.21, y: 117.1568}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1240682755
@@ -36734,7 +36680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15415138, y: 0.3645698}
   m_AnchorMax: {x: 0.841, y: 0.87243927}
-  m_AnchoredPosition: {x: 0.49998474, y: 1.4999924}
+  m_AnchoredPosition: {x: 0.49998474, y: 1.5}
   m_SizeDelta: {x: 3.5585022, y: -1.2720985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246896089
@@ -37251,7 +37197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 4789.888, y: -168}
+  m_AnchoredPosition: {x: 4736, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1269233006
@@ -37629,9 +37575,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 321485228}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37835,6 +37781,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302939650}
   m_CullTransparentMesh: 1
+--- !u!1 &1304637316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1304637317}
+  - component: {fileID: 1304637320}
+  - component: {fileID: 1304637319}
+  - component: {fileID: 1304637318}
+  m_Layer: 5
+  m_Name: CollectButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1304637317
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304637316}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 802593636}
+  m_Father: {fileID: 123070595}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 296, y: 140}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1304637318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304637316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1304637319}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 123070594}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1304637319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304637316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b30d0aa0cce0af7488ee61f90f69b8b7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1304637320
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304637316}
+  m_CullTransparentMesh: 1
 --- !u!1 &1309867239
 GameObject:
   m_ObjectHideFlags: 0
@@ -37919,7 +37998,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1965493753}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38282,7 +38361,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1779847897}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38414,7 +38493,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9224484}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38773,9 +38852,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 385938888}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38939,7 +39018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10397.326, y: -168}
+  m_AnchoredPosition: {x: 10278, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1335719046
@@ -39504,7 +39583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9077.928, y: -168}
+  m_AnchoredPosition: {x: 8974, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345908401
@@ -39651,9 +39730,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1574604529}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39976,7 +40055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 7428.681, y: -168}
+  m_AnchoredPosition: {x: 7344, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1370233375
@@ -44741,9 +44820,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2104455668}
+      - m_Target: {fileID: 2104455666}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44949,7 +45028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 3140.6423, y: -168}
+  m_AnchoredPosition: {x: 3106, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1386093513
@@ -45840,9 +45919,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 890506394}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -46362,7 +46441,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10727.176, y: -168}
+  m_AnchoredPosition: {x: 10604, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430443025
@@ -46586,7 +46665,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 989060194}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -46821,7 +46900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 3470.4915, y: -168}
+  m_AnchoredPosition: {x: 3432, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434083508
@@ -47257,7 +47336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 6768.983, y: -168}
+  m_AnchoredPosition: {x: 6692, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444693612
@@ -47406,7 +47485,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 336361061}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -47686,9 +47765,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1907253505}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48870,7 +48949,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1022686025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49000,9 +49079,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2117795037}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49432,9 +49511,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 73344729}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50121,7 +50200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2810.7932, y: -168}
+  m_AnchoredPosition: {x: 2780, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1574604529
@@ -50309,85 +50388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576069401}
   m_CullTransparentMesh: 1
---- !u!1 &1580176664
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1580176665}
-  - component: {fileID: 1580176667}
-  - component: {fileID: 1580176666}
-  m_Layer: 5
-  m_Name: TypeText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1580176665
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580176664}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1135680491}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 72.48599, y: -42.899994}
-  m_SizeDelta: {x: -144.97, y: 42.9}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1580176666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580176664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 300 Coins
---- !u!222 &1580176667
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580176664}
-  m_CullTransparentMesh: 1
 --- !u!1 &1580434701
 GameObject:
   m_ObjectHideFlags: 0
@@ -50472,7 +50472,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 517243422}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50837,81 +50837,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595667604}
   m_CullTransparentMesh: 1
---- !u!1 &1601605269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1601605270}
-  - component: {fileID: 1601605272}
-  - component: {fileID: 1601605271}
-  m_Layer: 5
-  m_Name: ImageIcone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1601605270
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601605269}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3493207, y: 1.3493207, z: 1.3493207}
-  m_Children: []
-  m_Father: {fileID: 1135680491}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.9, y: -23.2}
-  m_SizeDelta: {x: 168, y: 140}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1601605271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601605269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17dc10bb9af756846a9b6eaff92530e6, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1601605272
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601605269}
-  m_CullTransparentMesh: 1
 --- !u!1 &1608863181
 GameObject:
   m_ObjectHideFlags: 0
@@ -51153,9 +51078,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 510325383}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51240,7 +51165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 4130.1895, y: -168}
+  m_AnchoredPosition: {x: 4084, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1615436211
@@ -51619,7 +51544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9737.627, y: -168}
+  m_AnchoredPosition: {x: 9626, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623645661
@@ -51768,7 +51693,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2069556511}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51977,9 +51902,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1386093513}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52390,9 +52315,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 620774713}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52597,9 +52522,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1923208845}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52995,7 +52920,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1208343306}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -53202,7 +53127,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2084238767}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -53959,7 +53884,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2013506937}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -55168,7 +55093,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 684857021}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -55298,9 +55223,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 696117795}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -55509,9 +55434,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1119305220}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -55696,12 +55621,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 921302446}
-  m_Father: {fileID: 326109467}
-  m_RootOrder: 1
+  m_Father: {fileID: 64795630}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 219}
+  m_AnchoredPosition: {x: 20, y: 218.93994}
   m_SizeDelta: {x: 276, y: 308}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1747609807
@@ -55767,21 +55692,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750437475}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 326109467}
   - {fileID: 947595167}
   - {fileID: 123070595}
-  m_Father: {fileID: 1078549121}
-  m_RootOrder: 3
+  m_Father: {fileID: 2109610251}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2903, y: 1080.1201}
-  m_Pivot: {x: 0, y: 0.5}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1750437477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55802,7 +55727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3b63177127bd934c8759eb2b3f2c1ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5dff9e29a5b35b641a3b1d4223fb39ec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -56685,6 +56610,7 @@ MonoBehaviour:
   DisplayPos: {fileID: 621610418}
   UI_Reference: {fileID: 1781902976}
   coreGenScript: {fileID: 511192272}
+  BPManagerScript: {fileID: 0}
   Players:
   - Name: Car_00
     PlayerObject: {fileID: 938276239}
@@ -56826,7 +56752,8 @@ MonoBehaviour:
   ShockCoreEmpty: {fileID: 2006624060}
   CoreGenerationScript: {fileID: 511192272}
   BP_Manager: {fileID: 30163828}
-  BP_PopUp: {fileID: 0}
+  BP_PopUp: {fileID: 123070594}
+  BP_PopUp_PrefabParent: {fileID: 637401671}
   Bp_SpeedCoreSpriteLocked: {fileID: 21300000, guid: 4c3a3340300406842a1ab13e113343da,
     type: 3}
   Bp_BoostCoreSpriteLocked: {fileID: 21300000, guid: 61550da793d871d469857de874283c55,
@@ -56843,6 +56770,11 @@ MonoBehaviour:
     type: 3}
   Bp_ShocksCoreSpriteUnLocked: {fileID: 21300000, guid: 2aa926a0d8366ff45bebb47356a9739b,
     type: 3}
+  Bp_regularCardSprite: {fileID: 21300000, guid: 7199fc9a65d3b954f9967175f4a252b0,
+    type: 3}
+  Bp_CoinIcon: {fileID: 21300000, guid: 17dc10bb9af756846a9b6eaff92530e6, type: 3}
+  Bp_GemIcon: {fileID: 21300000, guid: da5fb27a7e4b4ce4db849ea1defee989, type: 3}
+  BP_PopupCollectButton: {fileID: 1304637318}
 --- !u!224 &1781902979
 RectTransform:
   m_ObjectHideFlags: 0
@@ -57070,7 +57002,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 209447447}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57842,7 +57774,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 857848934}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57974,7 +57906,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1856811766}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58805,85 +58737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813ccac765c9aa341910a8be27c19a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1891462105
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1891462106}
-  - component: {fileID: 1891462108}
-  - component: {fileID: 1891462107}
-  m_Layer: 5
-  m_Name: AmountText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1891462106
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891462105}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1135680491}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -64.471954, y: -42.899994}
-  m_SizeDelta: {x: -128.94, y: 42.9}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1891462107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891462105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 2 Rare Boost
---- !u!222 &1891462108
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891462105}
-  m_CullTransparentMesh: 1
 --- !u!1 &1903084476
 GameObject:
   m_ObjectHideFlags: 0
@@ -58966,9 +58819,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 185539757}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -59053,7 +58906,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5449.5864, y: -168}
+  m_AnchoredPosition: {x: 5388, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1907253505
@@ -59436,7 +59289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 2151.0947, y: -168}
+  m_AnchoredPosition: {x: 2128, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1923208845
@@ -59739,7 +59592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.0014648438, y: 38}
+  m_AnchoredPosition: {x: 0.0014648438, y: -10.099976}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1930142976
@@ -60001,7 +59854,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.0014648438, y: 518.06}
+  m_AnchoredPosition: {x: 0.0014648438, y: 509.1}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1934133142
@@ -61257,7 +61110,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 422434747}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -61570,7 +61423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 3800.3406, y: -168}
+  m_AnchoredPosition: {x: 3758, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2006071600
@@ -62516,7 +62369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 831.6983, y: -168}
+  m_AnchoredPosition: {x: 824, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030180287
@@ -62816,7 +62669,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1496377966}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -63381,7 +63234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 18.399963, y: 0.6000366}
+  m_AnchoredPosition: {x: 18.399994, y: 0.6000366}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &2046344124
@@ -64264,7 +64117,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 55410051}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64579,7 +64432,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 311115040}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64709,9 +64562,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1623645661}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -65103,9 +64956,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 494927980}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -65153,85 +65006,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106192474}
   m_CullTransparentMesh: 1
---- !u!1 &2109406990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2109406991}
-  - component: {fileID: 2109406993}
-  - component: {fileID: 2109406992}
-  m_Layer: 5
-  m_Name: PowerTypeText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2109406991
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109406990}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1135680491}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 72.48599, y: -42.899994}
-  m_SizeDelta: {x: -144.97, y: 42.9}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &2109406992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109406990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 300 Coins
---- !u!222 &2109406993
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109406990}
-  m_CullTransparentMesh: 1
 --- !u!1 &2109610250
 GameObject:
   m_ObjectHideFlags: 0
@@ -65273,6 +65047,7 @@ RectTransform:
   - {fileID: 452684902}
   - {fileID: 2033442287}
   - {fileID: 1078549121}
+  - {fileID: 1750437476}
   m_Father: {fileID: 750918041}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65456,7 +65231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 4460.039, y: -168}
+  m_AnchoredPosition: {x: 4410, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2117795037
@@ -65682,9 +65457,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1345908401}
+      - m_Target: {fileID: 1430443025}
         m_TargetAssemblyTypeName: TierButton, Assembly-CSharp
-        m_MethodName: CollectTier
+        m_MethodName: OpenToCollect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -66052,7 +65827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 7758.5303, y: -168}
+  m_AnchoredPosition: {x: 7670, y: -168}
   m_SizeDelta: {x: 276, y: 336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2138651174
