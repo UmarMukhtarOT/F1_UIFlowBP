@@ -20,27 +20,51 @@ public class BPCoreInfoClass
 
 public class TierButton : MonoBehaviour
 {
+    [Header("Lock/UnLock")]
+
+
+
+    [Space(30)]
+    public int unlockThreshHold; 
+
+    public bool isUnlocked;
+    [Space(30)]
+    public GameObject TickMark;
+    public GameObject CollectBtn;
+   
+
+    [HideInInspector]
+    public GameObject AchievementStar_Golden;
+    
+
+
+
+
+
+
+    [Space(30)]
     public bool hasCoins;
     public bool hasGems;
     public bool hasCore;
-    public bool isUnlocked;
     private bool IsPicked;
     
     public int tierCoins;
     public int tierGems;
-    
-    [Space(20)]
-    public Image displayImage;
     public int noOfCores;
+
+    [Space(30)]
+    public Image displayImage;
     public GarageRefrences UI_Reference;
     public Battle_Pass_Manager BpManager;
-    public int unlockThreshHold;
     public List<BPCoreInfoClass> bpCoreInfoClass;
 
 
     // Start is called before the first frame update
     void Start()
     {
+
+
+
 
         for (int i = 0; i < noOfCores; i++)
         {
@@ -66,12 +90,6 @@ public class TierButton : MonoBehaviour
         }
 
 
-
-        
-
-
-
-        
     }
 
     public void GeneratePopUpCards()
@@ -112,6 +130,11 @@ public class TierButton : MonoBehaviour
                 PopUpCard.gameObject.SetActive(true);
             }
          }
+
+
+
+
+
     }
 
 
@@ -150,7 +173,6 @@ public class TierButton : MonoBehaviour
     public void CollectTier()
     {
 
-
         foreach (Transform child in UI_Reference.BP_PopUp_PrefabParent.transform)
         {
             //Debug.Log(child.name + "dvz");
@@ -162,9 +184,10 @@ public class TierButton : MonoBehaviour
             }
         }
 
-        if (!IsPicked)
-        {
-            if (hasCoins)
+       
+
+
+        if (hasCoins)
             {
                 CoinsManager.instance.AddCoins(tierCoins);
             }
@@ -179,16 +202,19 @@ public class TierButton : MonoBehaviour
                 for (int i = 0; i < bpCoreInfoClass.Count; i++)
                 {
 
-                    BpManager.GenerateCoreScript.AddCoreInInventory(bpCoreInfoClass[i].coretype, bpCoreInfoClass[i].corePowerType, 1);
+                    PlayerSelection.Instance.coreGenScript.AddCoreInInventory(bpCoreInfoClass[i].coretype, bpCoreInfoClass[i].corePowerType, 1);
 
                 }
 
             }
 
             IsPicked = true;
-        }
-
-
+        CollectBtn.SetActive(false);
+        TickMark.SetActive(true);
+        UI_Reference.BP_PopUp.SetActive(false);
+        PlayerPrefs.SetInt(gameObject.name + "picked", 1);
+        BpManager.UpdateCoinsGems(); 
+        BpManager.CheckBpLockStatus();
 
     }
 
@@ -212,85 +238,7 @@ public class TierButton : MonoBehaviour
 
 
 
-    //public void SetCoreStatus()
-    //{
-    //    for (int i = 0; i < bpCoreInfoClass.Count; i++)
-    //    {
-
-    //        switch (bpCoreInfoClass[i].coretype)
-    //        {
-    //            case CoreTypeInfo.Speed:
-    //                if (isUnlocked)
-    //                {
-    //                    displayImage.sprite = UI_Reference.Bp_SpeedCoreSpriteUnLocked;
-
-    //                }
-    //                else
-    //                {
-
-    //                    displayImage.sprite = UI_Reference.Bp_SpeedCoreSpriteLocked;
-
-
-    //                }
-    //                break;
-    //            case CoreTypeInfo.Boost:
-    //                if (isUnlocked)
-    //                {
-    //                    displayImage.sprite = UI_Reference.Bp_BoostCoreSpriteUnLocked;
-
-    //                }
-    //                else
-    //                {
-
-    //                    displayImage.sprite = UI_Reference.Bp_BoostCoreSpriteLocked;
-
-
-    //                }
-    //                break;
-    //            case CoreTypeInfo.Accelration:
-    //                if (isUnlocked)
-    //                {
-    //                    displayImage.sprite = UI_Reference.Bp_AccelCoreSpriteUnLocked;
-
-    //                }
-    //                else
-    //                {
-
-    //                    displayImage.sprite = UI_Reference.Bp_AccelCoreSpriteLocked;
-
-
-    //                }
-    //                break;
-    //            case CoreTypeInfo.Shocks:
-    //                if (isUnlocked)
-    //                {
-    //                    displayImage.sprite = UI_Reference.Bp_ShocksCoreSpriteUnLocked;
-
-    //                }
-    //                else
-    //                {
-
-    //                    displayImage.sprite = UI_Reference.Bp_ShocksCoreSpriteLocked;
-
-
-    //                }
-    //                break;
-    //            default:
-    //                break;
-    //        }
-
-
-
-
-
-    //    }
-
-
-
-    //}
-
-
-
+    
 
 
 }

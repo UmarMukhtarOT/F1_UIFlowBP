@@ -13,7 +13,7 @@ public class CoreGenerationHandler : MonoBehaviour
     public CoreHandler corePrefab;
     public Transform coreParent;
 
-    [Header("Just for testing")]
+    //[Header("Just for testing")]
     public CoreTypeInfo testingCoreTypeInfo;
     public CorePowerType testingCorePowerType;
     public int testingamout;
